@@ -5,45 +5,82 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+      />
       <title>HOME</title>
       <style>
-        body {background-color: cyan;}
-    </style>
-    
+        .switches {
+          text-decoration: none;
+          color: white;
+          font-size: 2rem;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 40vh;
+        }
+        .switches:hover {
+          -webkit-transition: all 500ms ease-in-out;
+          -o-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out;
+          transform: scale(1.5);
+          color: rgb(0, 255, 208);;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          background: url("https://wallpapercave.com/wp/wp5565660.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-family: "Press Start 2P", cursive;
+        }
+
+        #heading {
+          background: url("https://res.cloudinary.com/practicaldev/image/fetch/s--I9_HSqYF--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/ynhseyd09pzan30xjjbq.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          text-align: center;
+          margin-bottom: 1rem;
+          padding: 1rem;
+        }
+        .main {
+          display: flex;
+          /* height: 100%; */
+          /* width: 100%; */
+          justify-content: space-around;
+          align-items: center;
+        }
+      </style>
     </head>
   </header>
 
   <main>
     <body>
-      <h1><u>JAPANESE LANGUAGE CLUB</u></h1>
+      <div id="heading">
+        <h1>JAPANESE LANGUAGE CLUB</h1>
+      </div>
 
-      <a href="index.html"
-        ><img
-        src="https://w7.pngwing.com/pngs/734/403/png-transparent-house-logo-home-real-estate-business-home-building-text-photography.png"
-        alt="Home" width="100" height="100"
-      </a>
-      <br />
-      <a href="Club members.html" target="_main"
-        ><img
-          src="https://previews.123rf.com/images/valentint/valentint1704/valentint170400632/75401341-members-icon-members-website-button-on-white-background-.jpg?fj=1"
-          alt="MEMBERS"
-          width="100"
-          height="100"
-        />
-      </a>
-      <br />
+      <div class="main">
+        <a href="index.html" class="switches"><h3>Home</h3> </a>
 
-      <a href="about.html"
-        ><img
-          src="https://findicons.com/files/icons/138/toolbar/128/about.png"
-          alt="ABOUT"
-          width="100"
-          height="100"
-      /></a>
+        <a href="Club members.html" class="switches"> <h3>Members</h3></a>
 
-      <br />
-      <hr />
-      <hr />
+        <a href="about.html" class="switches"><h3>About</h3> </a>
+      </div>
+
+      <div class="main">
+        <a href="ul.html" class="switches"><h3>Materials</h3> </a>
+
+        <a href="c&s.html" class="switches"><h3>Comments</h3> </a>
+      </div>
     </body>
   </main>
 </html>
