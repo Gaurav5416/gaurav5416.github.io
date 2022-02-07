@@ -1,4 +1,4 @@
-console.log("Welcome to Programiz!");
+
 
 function display() {
     var name=document.getElementById("name").value
